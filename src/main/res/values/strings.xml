@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">cineapp</string>
+    <string name="payment_title">Payment</string>
+    <string name="payment_method_label">Payment Method:</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="paypal">PayPal</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="booking_summary">Booking Summary</string>
+    <string name="done">Done</string>
+    <string name="booking_details">Movie: %1$s\nDate: %2$s\nTime: %3$s\nSeats: %4$d</string>
+    <string name="payment_details">Total: $%1$d\nPayment Method: %2$s</string>
+    <string name="profile_title">My Profile</string>
+    <string name="food_beverages">Food  Beverages</string>
+    <string name="popcorn_combo">Popcorn Combo</string>
+    <string name="price_8">$8.00</string>
+    <string name="back">Back</string>
+</resources>

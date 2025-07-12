@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/p2">
+
+        <!-- Payment Title - Using string resource -->
+        <TextView
+            android:id="@+id/paymentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_title"
+            android:textColor="#141414"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Movie Information -->
+        <TextView
+            android:id="@+id/movieInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FDFDFD"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/paymentTitle"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <!-- Price Information -->
+        <TextView
+            android:id="@+id/priceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFEFE"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/movieInfo"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <!-- Payment Method Label -->
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/payment_method_label"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/priceInfo" />
+
+        <!-- Payment Methods Radio Group -->
+        <RadioGroup
+            android:id="@+id/paymentMethodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/textView14">
+
+            <!-- Credit Card Option with proper touch target -->
+            <RadioButton
+                android:id="@+id/creditCardRadio"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:text="@string/credit_card"
+                android:drawablePadding="8dp" />
+
+            <!-- Debit Card Option with proper touch target -->
+            <RadioButton
+                android:id="@+id/debitCardRadio"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:text="@string/debit_card"
+                android:drawablePadding="8dp" />
+
+            <!-- PayPal Option with proper touch target -->
+            <RadioButton
+                android:id="@+id/paypalRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:text="@string/paypal" />
+        </RadioGroup>
+
+        <!-- Confirm Payment Button -->
+        <Button
+            android:id="@+id/confirmPaymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="152dp"
+            android:minHeight="48dp"
+            android:text="@string/confirm_payment"
+
+            app:layout_constraintTop_toBottomOf="@id/paymentMethodGroup"
+            tools:layout_editor_absoluteX="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
